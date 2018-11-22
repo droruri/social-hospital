@@ -18,6 +18,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { CommunitiesSelectionComponent } from './home/pages/communities-selection/communities-selection.component';
 import {MatInputModule} from '@angular/material/input';
 import { AuthPageComponent } from './home/pages/auth-page/auth-page.component';
+import { FilterCommunitiesPipe } from './shared/pipes/filter-communities.pipe';
+import {PolygonAreaService} from './core/services/polygon-area.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { AuthPageComponent } from './home/pages/auth-page/auth-page.component';
     ChatsComponent,
     UserDetailsModalComponent,
     CommunitiesSelectionComponent,
-    AuthPageComponent
+    AuthPageComponent,
+    FilterCommunitiesPipe
   ],
   entryComponents:[UserDetailsModalComponent],
   imports: [
@@ -46,7 +49,9 @@ import { AuthPageComponent } from './home/pages/auth-page/auth-page.component';
     MatButtonModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [
+    PolygonAreaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
