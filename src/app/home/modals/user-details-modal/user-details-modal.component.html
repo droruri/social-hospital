@@ -1,0 +1,15 @@
+<h1 mat-dialog-title style="text-align: right;">משתמש</h1>
+<div mat-dialog-content>
+  <div style="display: flex; flex-direction: row;">
+    <div class="profile-button"></div>
+    <h3 class="user-name">{{data.name}}</h3>
+  </div>
+  <div class="row-with-vertical-centered-items" style="justify-content: space-evenly;">
+    <i class="fab fa-facebook fa-3x" style="color: #3b5998"></i>
+    <i class="fab fa-facebook-messenger fa-3x" style="color: #0084ff"></i>
+    <i class="fab fa-whatsapp fa-3x" style="color: #25d366"></i>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">סגור</button>
+</div>

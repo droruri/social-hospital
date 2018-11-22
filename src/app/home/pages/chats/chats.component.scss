@@ -1,0 +1,12 @@
+.chats-page-container{
+  display: flex;
+  flex-direction: column;
+  font-family: matka, sans-serif;
+  height: calc(100vh - 80px);
+}
+
+.people-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

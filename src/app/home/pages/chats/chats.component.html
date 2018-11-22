@@ -1,0 +1,24 @@
+<div class="chats-page-container">
+  <div class="row-with-vertical-centered-items"
+       style="justify-content: space-evenly;">
+    <div class="rescue-forces-button-container">
+      <a><button class="profile-button"></button></a>
+    </div>
+    <div>
+      <h3>ד"ר ראשי סורוקה</h3>
+    </div>
+  </div>
+  <mat-tab-group animationDuration="1000ms">
+    <mat-tab label="אנשים">
+      <div class="people-container">
+        <div *ngFor="let name of names" style="padding-right: 100px; padding-left: 100px">
+          <a (click)="openDialog(name)"><button class="profile-button"></button></a>
+          <h3>{{name}}</h3>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="קהילות">
+
+    </mat-tab>
+  </mat-tab-group>
+</div>
