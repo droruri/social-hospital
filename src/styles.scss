@@ -153,6 +153,11 @@ body {
   background-image: url(/assets/hackearfb.png);
 }
 
+.group-icon{
+  @include profile-icon-button();
+  background-image: url(/assets/facebook-group-icon_orig.png);
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
